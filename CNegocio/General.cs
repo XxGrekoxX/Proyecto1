@@ -10,12 +10,9 @@ namespace CNegocio
     {
         private string _name;
         private string _contrasena;
-        public General() 
+        public Boolean General(string  ) 
         {
-            if (Name.Equals("") && Contrasena.Equals("")) 
-            {
-
-            }
+            
         }
 
         public string Name { get => _name; set => _name = value; }

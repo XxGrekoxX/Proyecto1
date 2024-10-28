@@ -8,6 +8,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CNegocio;
 
 namespace Proyecto1
 {
@@ -53,8 +54,7 @@ namespace Proyecto1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string _name = txtUser.Text;
-            string _contrasena = txtPassword.Text;
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
