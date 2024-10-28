@@ -14,10 +14,9 @@ namespace Proyecto1
 {
     public partial class FormLogin : Form
     {
-        protected void Page_load(object sender,EventArgs e) 
-        {
-            General g = new General();
-        }
+        General g = new General();
+        FormPrincipal FM = new FormPrincipal();
+        
         public FormLogin()
         {
             InitializeComponent();
@@ -58,7 +57,18 @@ namespace Proyecto1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            
+            string Usern = txtUser.Text;
+            string Password = txtPassword.Text;
+            if (g.AutenLogin(Usern, Password))
+            {
+                MessageBox.Show("Logiado");
+                FM.ShowDialog();
+                this.Close();
+            }
+            else 
+            {
+                MessageBox.Show("Usuario o contraseña Incorrecta");
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
