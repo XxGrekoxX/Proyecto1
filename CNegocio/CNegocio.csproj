@@ -44,5 +44,11 @@
     <Compile Include="General.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CArchivos\CArchivos.csproj">
+      <Project>{3986633e-a812-4931-a3db-7b987520565d}</Project>
+      <Name>CArchivos</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

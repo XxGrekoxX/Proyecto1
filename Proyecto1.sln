@@ -9,6 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CGrafico", "Proyecto1\CGraf
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CNegocio", "CNegocio\CNegocio.csproj", "{7B7E4C86-20FE-403B-88BA-98F5D91FFAB7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3986633E-A812-4931-A3DB-7B987520565D} = {3986633E-A812-4931-A3DB-7B987520565D}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CArchivos", "CArchivos\CArchivos.csproj", "{3986633E-A812-4931-A3DB-7B987520565D}"
 EndProject

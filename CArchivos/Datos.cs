@@ -8,5 +8,7 @@ namespace CArchivos
 {
     public class Datos
     {
+        private string xmlFilePath = "CArchivos\\Usuarios.xml";
+
     }
 }

@@ -14,6 +14,10 @@ namespace Proyecto1
 {
     public partial class FormLogin : Form
     {
+        protected void Page_load(object sender,EventArgs e) 
+        {
+            General general = new General();
+        }
         public FormLogin()
         {
             InitializeComponent();
