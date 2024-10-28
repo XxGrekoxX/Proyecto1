@@ -16,7 +16,7 @@ namespace Proyecto1
     {
         protected void Page_load(object sender,EventArgs e) 
         {
-            General general = new General();
+            General g = new General();
         }
         public FormLogin()
         {
