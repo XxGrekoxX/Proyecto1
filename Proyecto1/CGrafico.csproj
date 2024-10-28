@@ -91,5 +91,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CNegocio\CNegocio.csproj">
+      <Project>{7b7e4c86-20fe-403b-88ba-98f5d91ffab7}</Project>
+      <Name>CNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
