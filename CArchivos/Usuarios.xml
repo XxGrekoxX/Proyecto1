@@ -20,4 +20,8 @@
 		<Username>PedroSanchez</Username>
 		<Password>password!</Password>
 	</User >
+	<User>
+		<Username>qwert</Username>
+		<Password>12345</Password>
+	</User>
 </Users>
