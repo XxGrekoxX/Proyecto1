@@ -14,9 +14,6 @@ namespace Proyecto1
 {
     public partial class FormLogin : Form
     {
-        General g = new General();
-        FormPrincipal FM = new FormPrincipal();
-        
         public FormLogin()
         {
             InitializeComponent();
@@ -26,6 +23,9 @@ namespace Proyecto1
             btnRegistrer.ForeColor = Color.FromArgb(67, 144, 165);
             lblTexto.ForeColor = Color.FromArgb(67, 144, 165);
             lblWelcome.ForeColor = Color.FromArgb(67, 144, 165);
+            panel1.BackColor = Color.FromArgb(67, 144, 165);
+            panel2.BackColor = Color.FromArgb(67, 144, 165);
+            panel3.BackColor = Color.FromArgb(67, 144, 165);
         }
 
         private void picBoxClose_MouseHover(object sender, EventArgs e)
@@ -48,6 +48,7 @@ namespace Proyecto1
         private void picBoxMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+            //esto minimiza la ventana
         }
 
         private void lblTexto_Click(object sender, EventArgs e)
@@ -57,6 +58,28 @@ namespace Proyecto1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            string selectedRole = comboBoxType.SelectedItem?.ToString();
+            if(string.IsNullOrEmpty(selectedRole))
+            {
+                MessageBox.Show("Por favor, selecciona tipo de usuario.", "Advertencia",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (selectedRole == "Cliente")
+            {
+                FormPrincipal fPrincipal = new FormPrincipal();
+                fPrincipal.Show();
+                this.Hide();
+            }
+            else if(selectedRole == "Administrador")
+            {
+                FormAdminMenu formAdminMenu = new FormAdminMenu();
+                formAdminMenu.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Selecciona un rol válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             string Usern = txtUser.Text;
             string Password = txtPassword.Text;
             if (g.AutenLogin(Usern, Password) == true)
@@ -93,6 +116,13 @@ namespace Proyecto1
             picBoxHidePassword.Hide();
             txtPassword.UseSystemPasswordChar = true;
             picBoxShowPassword.Show();
+        }
+
+        private void btnRegistrer_Click(object sender, EventArgs e)
+        {
+            FormRegister register = new FormRegister();
+            register.Show();
+            this.Hide();
         }
     }
 }

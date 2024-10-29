@@ -121,7 +121,7 @@
   <data name="picBoxMinimize.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAGSAAABkgFeCSj3AAABWElE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAGPAAABjwEeLVWuAAABWElE
         QVRYR+3Xv0sCcRjH8f4PI83gztHWwKE/qxoa6qAWN+9Ss00viKagSaFsyOoPuIZoqhxLHZrk6fkIwSFf
         877fe+5oOOENcvrc8wJ/wHelVL/JcR435iilsAs7cwDgyZRTvTHJsNMDYBS6mHZfAKheSK0MkAEyQAb4
         /wD7RH09SlFmFwJsbrN1R9WHV7p8HtJF8KEVZqqDFyqf3s7updqBFgIs1m+37+l98k2mj7fPCVVqV2S5
@@ -134,7 +134,7 @@
   <data name="picBoxClose.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAGSAAABkgFeCSj3AAACTUlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAGPAAABjwEeLVWuAAACTUlE
         QVRYR+2Xy0rDQBSGfQ8Fqyhelm4E30wrKt5R11ZbN7oXRRHcWcH2FZTq3gt4pUJbU47nn3BgHE8mSVu7
         cuCjaTuZ/8uZZIb0jO4We5kc88FQl0AWMnshgIMmo3X8S5CZg8C79WO3eYOA9kfX+BdILDCyo/+ukaZv
         rMAIM5Yv0tR+icbzl+a71g/gP/RBX5zj6yt4BWTApatbun2p0jJ/jkcMLH1XSmFfnBMnDLwCuAoM9NkI
@@ -148,13 +148,10 @@
         RU5ErkJggg==
 </value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="picBoxShowPassword.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAOw3AADsNwEH5WQiAAACnklE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAOw2AADsNgHVoobGAAACnklE
         QVRYR+2Wy4vOURjHXzu3KTZuMeSSKbc/QS7NWMxGKXdiQbERZZTCQpmpsSRl9sqEkIX7JcIspxiiyHVl
         ZSEZl8+nztFxvL/39ep9lXq/9alfz3nOc27Pec6v1FRT/6NGwEiYCNMDE4LNtobIwNNgIxyDKzAErwOP
         g802ffSt22TaoBuewlf4DsPwAV4F/NZmmz769oB9/1pjYAc8BwN/hMvQBZ0wD6YG5gfbXtBHX/vY1xjG
@@ -172,7 +169,7 @@
   <data name="picBoxHidePassword.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAOw3AADsNwEH5WQiAAAC9UlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAOw2AADsNgHVoobGAAAC9UlE
         QVRYR82XycvNURjHr5152JgyDxmzZClDsrBRyrxgQbEghDKuiFhYkOQfQBQis0yFpTJlDLFCopDx88k5
         Oo77u6/73tx7v/Xp/b3POc/vec70nN8tNZO6QOdfj/WXgQ/CaRilod4ygVPwA67ASKi7DHoZmj6JNtAW
         ekD/QPdgs61mFSXRF+bDbjgDd+F54E6w2WYf+9aUTJ7ELrgP34LtK7yGZwGftdlmH/tug+HQao2Dx+BL
@@ -1370,4 +1367,7 @@
         f/T6J659NwYG41XoRalxe0uMuaEvvLv0t6y1h3ljPKEDE2g4n//Z
 </value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

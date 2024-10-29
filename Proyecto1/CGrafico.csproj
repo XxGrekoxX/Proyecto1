@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form\FormMain.cs">
+    <Compile Include="Form\FormRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FormMain.Designer.cs">
-      <DependentUpon>FormMain.cs</DependentUpon>
+    <Compile Include="Form\FormRegister.Designer.cs">
+      <DependentUpon>FormRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormAdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormAdminMenu.Designer.cs">
+      <DependentUpon>FormAdminMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormClientMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormClientMenu.Designer.cs">
+      <DependentUpon>FormClientMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\FormLogin.cs">
       <SubType>Form</SubType>
@@ -60,8 +72,38 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form\FormMain.resx">
-      <DependentUpon>FormMain.cs</DependentUpon>
+    <Compile Include="UserControlAbout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlAbout.Designer.cs">
+      <DependentUpon>UserControlAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlUpDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlUpDate.Designer.cs">
+      <DependentUpon>UserControlUpDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UserControlRegistro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UserControlRegistro.Designer.cs">
+      <DependentUpon>UserControlRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UserControlRegister.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UserControlRegister.Designer.cs">
+      <DependentUpon>UserControlRegister.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form\FormRegister.resx">
+      <DependentUpon>FormRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormAdminMenu.resx">
+      <DependentUpon>FormAdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormClientMenu.resx">
+      <DependentUpon>FormClientMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -75,6 +117,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControlAbout.resx">
+      <DependentUpon>UserControlAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlUpDate.resx">
+      <DependentUpon>UserControlUpDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UserControlRegistro.resx">
+      <DependentUpon>UserControlRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UserControlRegister.resx">
+      <DependentUpon>UserControlRegister.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

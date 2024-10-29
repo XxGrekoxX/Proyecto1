@@ -32,24 +32,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.picBoxMinimize = new System.Windows.Forms.PictureBox();
             this.picBoxClose = new System.Windows.Forms.PictureBox();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBoxLogin = new System.Windows.Forms.GroupBox();
-            this.lblUser = new System.Windows.Forms.Label();
-            this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.btnRegistrer = new System.Windows.Forms.Button();
-            this.lblTexto = new System.Windows.Forms.Label();
-            this.lblTipo = new System.Windows.Forms.Label();
-            this.comboBoxType = new System.Windows.Forms.ComboBox();
             this.picBoxShowPassword = new System.Windows.Forms.PictureBox();
+            this.comboBoxType = new System.Windows.Forms.ComboBox();
+            this.lblTipo = new System.Windows.Forms.Label();
+            this.lblTexto = new System.Windows.Forms.Label();
+            this.btnRegistrer = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.lblUser = new System.Windows.Forms.Label();
             this.picBoxHidePassword = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxClose)).BeginInit();
             this.groupBoxLogin.SuspendLayout();
@@ -105,29 +105,6 @@
             this.groupBoxLogin.TabStop = false;
             this.groupBoxLogin.Text = "Favor registrarse primero";
             // 
-            // lblUser
-            // 
-            this.lblUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblUser.AutoSize = true;
-            this.lblUser.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser.Location = new System.Drawing.Point(45, 54);
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(73, 19);
-            this.lblUser.TabIndex = 0;
-            this.lblUser.Text = "Usuario:";
-            // 
-            // txtUser
-            // 
-            this.txtUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUser.Location = new System.Drawing.Point(49, 91);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(297, 28);
-            this.txtUser.TabIndex = 1;
-            // 
             // txtPassword
             // 
             this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -139,18 +116,77 @@
             this.txtPassword.TabIndex = 2;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
-            // lblPassword
+            // picBoxShowPassword
             // 
-            this.lblPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.picBoxShowPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picBoxShowPassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBoxShowPassword.Image = ((System.Drawing.Image)(resources.GetObject("picBoxShowPassword.Image")));
+            this.picBoxShowPassword.Location = new System.Drawing.Point(313, 170);
+            this.picBoxShowPassword.Name = "picBoxShowPassword";
+            this.picBoxShowPassword.Size = new System.Drawing.Size(33, 30);
+            this.picBoxShowPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBoxShowPassword.TabIndex = 8;
+            this.picBoxShowPassword.TabStop = false;
+            this.picBoxShowPassword.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.picBoxShowPassword.MouseHover += new System.EventHandler(this.picBoxShowPassword_MouseHover);
+            // 
+            // comboBoxType
+            // 
+            this.comboBoxType.FormattingEnabled = true;
+            this.comboBoxType.Items.AddRange(new object[] {
+            "Administrador",
+            "Cliente"});
+            this.comboBoxType.Location = new System.Drawing.Point(49, 251);
+            this.comboBoxType.Name = "comboBoxType";
+            this.comboBoxType.Size = new System.Drawing.Size(121, 29);
+            this.comboBoxType.TabIndex = 3;
+            // 
+            // lblTipo
+            // 
+            this.lblTipo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(45, 135);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(108, 19);
-            this.lblPassword.TabIndex = 2;
-            this.lblPassword.Text = "Contraseña:";
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipo.Location = new System.Drawing.Point(45, 217);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(135, 19);
+            this.lblTipo.TabIndex = 7;
+            this.lblTipo.Text = "Usuario de tipo:";
+            // 
+            // lblTexto
+            // 
+            this.lblTexto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTexto.AutoSize = true;
+            this.lblTexto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblTexto.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTexto.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblTexto.Location = new System.Drawing.Point(46, 375);
+            this.lblTexto.Name = "lblTexto";
+            this.lblTexto.Size = new System.Drawing.Size(189, 18);
+            this.lblTexto.TabIndex = 5;
+            this.lblTexto.Text = "¿No está registrado aún?";
+            this.lblTexto.Click += new System.EventHandler(this.lblTexto_Click);
+            // 
+            // btnRegistrer
+            // 
+            this.btnRegistrer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRegistrer.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegistrer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegistrer.FlatAppearance.BorderSize = 0;
+            this.btnRegistrer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrer.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrer.Location = new System.Drawing.Point(250, 367);
+            this.btnRegistrer.Name = "btnRegistrer";
+            this.btnRegistrer.Size = new System.Drawing.Size(96, 33);
+            this.btnRegistrer.TabIndex = 6;
+            this.btnRegistrer.Text = "Registrar";
+            this.btnRegistrer.UseVisualStyleBackColor = false;
+            this.btnRegistrer.Click += new System.EventHandler(this.btnRegistrer_Click);
             // 
             // btnLogin
             // 
@@ -171,76 +207,41 @@
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // btnRegistrer
+            // lblPassword
             // 
-            this.btnRegistrer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRegistrer.BackColor = System.Drawing.Color.Transparent;
-            this.btnRegistrer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegistrer.FlatAppearance.BorderSize = 0;
-            this.btnRegistrer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrer.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrer.Location = new System.Drawing.Point(250, 367);
-            this.btnRegistrer.Name = "btnRegistrer";
-            this.btnRegistrer.Size = new System.Drawing.Size(96, 33);
-            this.btnRegistrer.TabIndex = 6;
-            this.btnRegistrer.Text = "Registrar";
-            this.btnRegistrer.UseVisualStyleBackColor = false;
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(45, 135);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(108, 19);
+            this.lblPassword.TabIndex = 2;
+            this.lblPassword.Text = "Contraseña:";
             // 
-            // lblTexto
+            // txtUser
             // 
-            this.lblTexto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTexto.AutoSize = true;
-            this.lblTexto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblTexto.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTexto.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblTexto.Location = new System.Drawing.Point(46, 375);
-            this.lblTexto.Name = "lblTexto";
-            this.lblTexto.Size = new System.Drawing.Size(189, 18);
-            this.lblTexto.TabIndex = 5;
-            this.lblTexto.Text = "¿No está registrado aún?";
-            this.lblTexto.Click += new System.EventHandler(this.lblTexto_Click);
+            this.txtUser.Location = new System.Drawing.Point(49, 91);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(297, 28);
+            this.txtUser.TabIndex = 1;
             // 
-            // lblTipo
+            // lblUser
             // 
-            this.lblTipo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTipo.AutoSize = true;
-            this.lblTipo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipo.Location = new System.Drawing.Point(45, 217);
-            this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(135, 19);
-            this.lblTipo.TabIndex = 7;
-            this.lblTipo.Text = "Usuario de tipo:";
-            // 
-            // comboBoxType
-            // 
-            this.comboBoxType.FormattingEnabled = true;
-            this.comboBoxType.Items.AddRange(new object[] {
-            "Administrador",
-            "Cliente"});
-            this.comboBoxType.Location = new System.Drawing.Point(49, 251);
-            this.comboBoxType.Name = "comboBoxType";
-            this.comboBoxType.Size = new System.Drawing.Size(121, 29);
-            this.comboBoxType.TabIndex = 3;
-            // 
-            // picBoxShowPassword
-            // 
-            this.picBoxShowPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picBoxShowPassword.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBoxShowPassword.Image = ((System.Drawing.Image)(resources.GetObject("picBoxShowPassword.Image")));
-            this.picBoxShowPassword.Location = new System.Drawing.Point(313, 170);
-            this.picBoxShowPassword.Name = "picBoxShowPassword";
-            this.picBoxShowPassword.Size = new System.Drawing.Size(33, 30);
-            this.picBoxShowPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBoxShowPassword.TabIndex = 8;
-            this.picBoxShowPassword.TabStop = false;
-            this.picBoxShowPassword.Click += new System.EventHandler(this.pictureBox1_Click);
-            this.picBoxShowPassword.MouseHover += new System.EventHandler(this.picBoxShowPassword_MouseHover);
+            this.lblUser.AutoSize = true;
+            this.lblUser.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.Location = new System.Drawing.Point(45, 54);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(73, 19);
+            this.lblUser.TabIndex = 0;
+            this.lblUser.Text = "Usuario:";
             // 
             // picBoxHidePassword
             // 
@@ -285,7 +286,7 @@
             this.lblWelcome.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.Location = new System.Drawing.Point(1007, 543);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(332, 40);
+            this.lblWelcome.Size = new System.Drawing.Size(321, 39);
             this.lblWelcome.TabIndex = 8;
             this.lblWelcome.Text = "Bienvenido a Voco";
             // 
@@ -342,7 +343,6 @@
 
         private System.Windows.Forms.PictureBox picBoxMinimize;
         private System.Windows.Forms.PictureBox picBoxClose;
-        private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.GroupBox groupBoxLogin;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label lblPassword;
@@ -360,6 +360,7 @@
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
