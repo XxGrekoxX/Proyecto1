@@ -59,7 +59,7 @@ namespace Proyecto1
         {
             string Usern = txtUser.Text;
             string Password = txtPassword.Text;
-            if (g.AutenLogin(Usern, Password))
+            if (g.AutenLogin(Usern, Password) == true)
             {
                 MessageBox.Show("Logiado");
                 FM.ShowDialog();

@@ -26,7 +26,7 @@ namespace CArchivos
             }
         }
 
-        public bool ValidarLogin(string Usern, string Password)
+        public Boolean ValidarLogin(string Usern, string Password)
         {
             try
             {
@@ -37,15 +37,15 @@ namespace CArchivos
                     CrearArchivoXMLInicial();
                 }
 
-                XDocument doc = XDocument.Load(rutaArchivo);
-
-                // Buscar un usuario que coincida con el nombre de usuario y contraseña proporcionados
-                var usuarioValido = doc.Descendants($"/Users/User[Username='{Usern}']")
-                    .Any(usuario =>
-                        usuario.Element("Username").Value == Usern &&
-                        usuario.Element("Password").Value == Password);
-
-                return true;
+         
+                XmlDocument xmldoc = new XmlDocument();
+                xmldoc.Load(rutaArchivo);
+                XmlNode usuario = xmldoc.SelectSingleNode($"/Users/User[Username='{Usern}']");
+                if (usuario.SelectSingleNode("Username").Value == Usern && usuario.SelectSingleNode("Password").Value == Password)
+                {
+                    return true;
+                }
+                
             }
             catch (Exception ex)
             {
