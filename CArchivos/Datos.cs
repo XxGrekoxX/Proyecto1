@@ -1,18 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
+using static System.Net.WebRequestMethods;
 
 
 namespace CArchivos
 {
     public class Datos
     {
-        string xmlFilePath = Path.Combine("CArchivos", "Usuarios.xml");
+        string xmlFilePath = "https://github.com/XxGrekoxX/Proyecto1/blob/master/CArchivos/Usuarios.xml";
         public Boolean ValidarLogin(string Usern, string Password)
         {
             XDocument ValDoc = XDocument.Load(xmlFilePath);

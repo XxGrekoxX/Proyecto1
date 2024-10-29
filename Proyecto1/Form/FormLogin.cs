@@ -96,3 +96,12 @@ namespace Proyecto1
         }
     }
 }
+/*
+ public Boolean ValidarLogin(string Usern, string Password)
+        {
+            XDocument ValDoc = XDocument.Load(xmlFilePath);
+            
+            var user = ValDoc.Descendants("User ").FirstOrDefault(u=>u.Element("Username").Value == Usern && u.Element("Password").Value == Password);
+            return user != null;
+        }
+ */
