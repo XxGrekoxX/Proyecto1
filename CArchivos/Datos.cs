@@ -14,14 +14,60 @@ namespace CArchivos
 {
     public class Datos
     {
-        string xmlFilePath = "https://github.com/XxGrekoxX/Proyecto1/blob/master/CArchivos/Usuarios.xml";
-        public Boolean ValidarLogin(string Usern, string Password)
+       
+        private static string rutaBase = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "CArchivos");
+        private static string rutaArchivo = Path.Combine(rutaBase, "Usuarios.xml");
+
+        public static void InicializarDirectorios()
         {
-            XDocument ValDoc = XDocument.Load(xmlFilePath);
-            
-            var user = ValDoc.Descendants("User ").FirstOrDefault(u=>u.Element("Username").Value == Usern && u.Element("Password").Value == Password);
-            return user != null;
+            if (!Directory.Exists(rutaBase))
+            {
+                Directory.CreateDirectory(rutaBase);
+            }
         }
-        
+
+        public bool ValidarLogin(string Usern, string Password)
+        {
+            try
+            {
+                InicializarDirectorios();
+
+                if (rutaArchivo == null)
+                {
+                    CrearArchivoXMLInicial();
+                }
+
+                XDocument doc = XDocument.Load(rutaArchivo);
+
+                // Buscar un usuario que coincida con el nombre de usuario y contraseña proporcionados
+                var usuarioValido = doc.Descendants($"/Users/User[Username='{Usern}']")
+                    .Any(usuario =>
+                        usuario.Element("Username").Value == Usern &&
+                        usuario.Element("Password").Value == Password);
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error en ValidarLogin: {ex.Message}");
+                return false;
+            }
+        }
+
+        private static void CrearArchivoXMLInicial()
+        {
+            XDocument doc = new XDocument(
+                new XDeclaration("1.0", "utf-8", "yes"),
+                new XElement("Users",
+                    new XElement("User",
+                        new XElement("Username", "admin"),
+                        new XElement("Password", "admin123")
+                    )
+                )
+            );
+            doc.Save(rutaArchivo);
+        }
     }
+        
+    
 }
