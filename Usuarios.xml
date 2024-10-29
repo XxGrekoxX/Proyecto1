@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Users>
-	<User>
+	<User >
 		<Username>JuanPerez</Username>
 		<Password>contraseña123</Password>
-	</User>
-	<User>
+	</User >
+	<User >
 		<Username>MariaGomez</Username>
 		<Password>miClaveSegura!</Password>
-	</User>
-	<User>
+	</User >
+	<User >
 		<Username>CarlosLopez</Username>
 		<Password>1234abcd</Password>
-	</User>
-	<User>
+	</User >
+	<User >
 		<Username>AnaMartinez</Username>
 		<Password>qwertyuiop</Password>
-	</User>
-	<User>
+	</User >
+	<User >
 		<Username>PedroSanchez</Username>
 		<Password>password!</Password>
-	</User>
+	</User >
 	<User>
 		<Username>qwert</Username>
 		<Password>12345</Password>
