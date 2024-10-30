@@ -72,16 +72,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControlAbout.cs">
+    <Compile Include="UserControl\UserControlAbout.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlAbout.Designer.cs">
+    <Compile Include="UserControl\UserControlAbout.Designer.cs">
       <DependentUpon>UserControlAbout.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlUpDate.cs">
+    <Compile Include="UserControl\UserControlUpDate.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlUpDate.Designer.cs">
+    <Compile Include="UserControl\UserControlUpDate.Designer.cs">
       <DependentUpon>UserControlUpDate.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\UserControlRegistro.cs">
@@ -117,10 +117,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserControlAbout.resx">
+    <EmbeddedResource Include="UserControl\UserControlAbout.resx">
       <DependentUpon>UserControlAbout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlUpDate.resx">
+    <EmbeddedResource Include="UserControl\UserControlUpDate.resx">
       <DependentUpon>UserControlUpDate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\UserControlRegistro.resx">
